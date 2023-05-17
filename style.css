@@ -28,20 +28,29 @@ main{
 }
 .birthdate{
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 label{
     color: var(--smokeyGrey);
+    text-transform: uppercase;
 }
 
 input{
-    width: 4rem;
+    width: 4.7rem;
     height: 3rem;
     padding: 0 0 0 0.5rem;
     border-radius: 0.5rem;
     border: 0.5px solid var(--smokeyGrey);
+    margin-bottom: -0.3rem;
+}
+
+.error{
+    display: none;
+    font-size: 0.5rem;
+    color: var(--lightRed);
 }
 
 .arrow{
@@ -70,12 +79,31 @@ input{
 }
 
 footer{
-    font-size: 1rem;
+    font-size: 0.7rem;
     text-align: center;
     padding: 2rem 1rem;
-    margin: auto;
+    margin: 3rem auto;
 }
 
 footer a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:600px) {
+    .birthdate{
+        justify-content: left;
+        gap: 2rem;
+    }
+
+    input{
+        width: 6rem;
+    }
+
+    hr{
+        width: 70vh;
+    }
+
+    .arrow{
+        margin-right: 0;
+    }
 }
