@@ -3,35 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
+  <main>
+    <form action="" class="birthdate">
+      <div class="day">
+        <label for="day">Day</label><br>
+        <input for="day" type="number" placeholder="DD">
+      </div>
+      <div class="month">
+        <label for="month">Month</label><br>
+        <input type="number" placeholder="MM">
+      </div>
+      <div class="year">
+        <label for="year">Year</label><br>
+        <input type="number" placeholder="YYYY">
+      </div>      
+    </form>
 
-  Day
-  DD
+    <hr>
+    <div class="arrow">
+      <img src="./assets/images/icon-arrow.svg" alt="Arrow Image">
+    </div>
 
-  Month
-  MM
+    <div class="age">
+      <div class="years">
+        <span class="dinamicAge">--</span>
+        <span>years</span>
+      </div>
+      <div class="months">
+        <span class="dinamicAge">--</span>
+        <span>months</span>
+      </div>
+      <div class="days">
+        <span class="dinamicAge">--</span>
+        <span>days</span>
+      </div>
+    </div>
+    
+  </main>
 
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://hualdevportafolio.netlify.app/" target="_blank">HualDev</a>.
+  </footer>
+
+  <script src="./ageCalculator.js"></script>
 </body>
 </html>
