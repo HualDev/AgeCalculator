@@ -45,6 +45,24 @@ input{
     border-radius: 0.5rem;
     border: 0.5px solid var(--smokeyGrey);
     margin-bottom: -0.3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    caret-color: var(--purple);
+}
+
+input:focus{
+    outline: unset;
+    border-color: var(--purple);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input:hover{
+    cursor: pointer;
 }
 
 .error{
@@ -62,6 +80,11 @@ input{
     justify-content: center;
     align-items: center;
     margin: -2.5rem auto auto;
+}
+
+.arrow:hover{
+    background-color: var(--offBlack);
+    cursor: pointer;
 }
 
 .arrow img{
@@ -105,5 +128,9 @@ footer a {
 
     .arrow{
         margin-right: 0;
+    }
+
+    .age{
+        font-size: 4rem;
     }
 }
